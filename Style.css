@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cormorant:wght@500&family=Exo+2:wght@700&family=Mate+SC&family=Merriweather:wght@700&family=Monoton&family=Noto+Sans+Bengali:wght@700&family=Open+Sans:wght@800&family=Orbitron:wght@700&family=Playfair+Display:wght@600&family=Righteous&family=Roboto:wght@500;700;900&family=Tektur:wght@600;700&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;1,200&display=swap');
+
+* {
+
+    font-family: 'Cormorant', serif;
+    font-family: 'Mate SC', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Monoton', sans-serif;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Righteous', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tektur', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Zeyada', cursive;
+    font-family: 'Bungee Spice', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Shared CSS */
+h1 {
+    font-size: 40px;
+    color: orangered;
+}
+
+button {
+    height: 5vh;
+    width: 7.5vw;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+body{}
+/* header */
+header {
+    padding: 0 235px;
+    margin-top: 20px;
+}
+
+/* nav and logo section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 48px;
+    height: 56.008px;
+    flex-shrink: 0;
+
+}
+
+.logo .ppp {
+    color: black;
+    font-size: 35px;
+}
+
+.wwe {
+    color: orangered;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* top side */
+.top-class {
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.511), rgba(117, 19, 93, 0.628)), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2vh;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contact p {
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.input {
+    background-color: rgba(255, 255, 255, 0.361);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.box input {
+    height: 5vh;
+    width: 7.5vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.box4>button {
+    height: 5vh;
+    width: 7.5vw;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+::placeholder {
+    padding-left: 10px;
+}
+
+/* second section */
+.sec-section {
+    padding: 20px 235px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.text p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    color: rgb(106, 106, 106);
+}
+
+.gap li {
+    margin-top: 30px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+}
+
+.left>h1 {
+    margin-bottom: 10px;
+}
+
+.choose {
+    padding: 0 235px;
+    margin-top: 7vh;
+    text-align: ;
+}
+
+.lock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.house {
+    padding: 40px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.house p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.move {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.move p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.lock2{
+    margin-top: 3vh;
+    padding: 40px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.container1{
+    margin-top: 9vh;
+} 
+.mid{
+    text-align: center;
+}
+.red{
+    border: 4px solid orangered;
+    width: 3vw;
+    border-radius: 10px;
+
+}
+.deals{
+        padding: 0 235px;
+        margin-top: 9vh; 
+}
+.cov{
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3vw;
+    margin-top: 9vh;
+    background-image: url('Images/Group\ 39.png');
+    opacity:0.9 ;
+}
+.cov2{
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 3vw;
+    margin-top: 2vh;
+    background-image: url('Images/Group\ 40.png');
+    opacity:0.9 ;
+}
+.cov3{
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3vw;
+    margin-top: 2vh;
+    background-image: url('Images/Group\ 39.png');
+    opacity:0.9 ;
+}
+.del{
+    width:50%;
+    height: 45vh;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 20px;
+}
+.img-container{
+    display: flex;
+    padding-top: 60px;
+    padding-left: 60px;
+    color: orangered;
+}
+.img-container img{
+    padding: 10px;
+}
+.content{
+    padding-left: 70px;
+    margin-top: -25px;
+}
+.content h1{
+    font-size: 30px;
+}
+.content h2{
+    font-size: 20px;
+    color: orangered;
+}
+.button2{
+    height: 8vh;
+    width: 12vw;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 2vh;
+    text-align: center;
+}
+.bbt{
+    display: flex;
+    justify-content: center;
+}
+.media{
+    padding: 0 235px;
+    margin-top: 9vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
