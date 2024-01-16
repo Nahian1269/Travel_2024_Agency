@@ -29,6 +29,7 @@ h1 {
 button {
     height: 5vh;
     width: 7.5vw;
+    max-width: 100%;
     border-radius: 10px;
     border: none;
     background-color: orangered;
@@ -88,7 +89,7 @@ header {
 /* top side */
 .top-class {
     height: 70vh;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.511), rgba(117, 19, 93, 0.628)), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.511), rgba(117, 19, 93, 0.628)), url('/Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -116,9 +117,10 @@ header {
     font-size: 15px;
 }
 
-.input {
+.inputX {
     background-color: rgba(255, 255, 255, 0.361);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5px;
     padding: 20px;
@@ -126,12 +128,12 @@ header {
     border-radius: 20px;
 }
 
-.box input {
-    height: 5vh;
-    width: 7.5vw;
-    border-radius: 10px;
-    border: none;
-}
+.box .mom {
+        height: 5vh; 
+        max-width: 100%; 
+        border-radius: 10px;
+        border: none;
+    }
 
 .box4>button {
     height: 5vh;
@@ -145,7 +147,6 @@ header {
 ::placeholder {
     padding-left: 10px;
 }
-
 /* second section */
 .sec-section {
     padding: 20px 235px;
@@ -172,6 +173,18 @@ header {
     margin-bottom: 10px;
 }
 
+.right img{
+
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+
+/* why choose CSS */
 .choose {
     padding: 0 235px;
     margin-top: 7vh;
@@ -189,10 +202,21 @@ header {
 .house {
     padding: 40px 30px;
     border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.house2 {
+    padding: 40px 30px;
+    border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
 .house p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+.house2 p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 1rem;
@@ -214,9 +238,10 @@ header {
     margin-top: 3vh;
     padding: 40px 30px;
     border-radius: 16px;
-    border: 1px solid rgba(41, 206, 246, 0.20);
-    background: rgba(41, 206, 246, 0.05);
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
 }
+
 .container1{
     margin-top: 9vh;
 } 
@@ -320,4 +345,446 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+
+/* news letter section */
+.newsletter {
+    padding: 0 5%;
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+    flex-direction: ;
+    justify-content: space-around;
+}
+
+.forma {
+    padding: 4vh 4vw;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+.forma h1{
+    font-size: 40px;
+    font-weight: 800s;
+}
+
+.xox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.xox input {
+    height: 4vh;
+    width: 100%;
+    max-width: 100%; 
+    border-radius: 20px;
+    background-color: rgb(193, 193, 193);
+    border: none;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.object {
+    height: 5vh;
+    width: 100%;
+    max-width: 100%; 
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+.igi {
+    position: relative;
+}
+
+.rol {
+    position: absolute;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.box5 {
+    position: absolute;
+    background-color: orangered;
+    text-align: center;
+    width: 50%;
+    max-width: 100%; 
+    height: 12vh;
+    transform: rotate(-19.628deg);
+    margin-top: 15vh;
+    margin-left:17vw;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* glow effect */
+.box5 h1 {
+    font-size: 30px;
+    color: white;
+    animation: bulb 1s ease-in-out infinite alternate;
+}
+
+.box5 h3 {
+    color: white;
+}
+
+@-webkit-keyframes bulb {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cb2900, 0 0 40px;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #730000, 0 0 30px #ae0101, 0 0 40px ;
+    }
+}
+
+.iimag {
+    width: 40%;
+    height: 32.2vh;
+    background-image: url('/Images/Rectangle\ 8\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+    margin-top: 9vh; 
+    height: 50vh;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+}
+.priority{
+text-align: center;
+padding-top: 100px;
+font-size: 15px;
+}
+
+.logox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ppp{
+    color: black;
+}
+.nax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nax li {
+    list-style: none;
+    padding: 20px;
+    font-size: 30px;
+
+}
+.panthom{
+    width: 80%;
+}
+
+
+
+
+
+/* bonus Section */
+.award {
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.award:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.project {
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.project:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.client {
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.client:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.email {
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.email:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.alt img {
+    margin-bottom: 5px;
+}
+
+.alt h1 {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.alt p {
+    margin-top: 5px;
+}
+
+.ttl {
+    padding: 0 240px;
+    display: flex;
+    align-items: center;
+}
+
+.ttl h1 {
+    font-size: 40px;
+    color: orangered;
+}
+
+.vline2 {
+    border-left: 10px solid orangered;
+    height: 100px;
+    padding-right: 1vw;
+}
+
+.wow {
+    margin-bottom: 25px;
+}
+
+.wow h1 {
+    margin-bottom: 5px;
+}
+
+.wow p {
+    margin-top: 5px;
+}
+.someoff{
+    padding: 0 235px;
+    margin-top: 9vh; 
+}
+.facts{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 40px;
+}
+.ttl{
+    padding: 0 235px;
+    margin-top: 9vh; 
+}
+
+
+/* media files */
+
+
+/* footer media */
+@media only screen and (min-width: 900px) {
+    .priority {
+        padding-top: 50px;
+        font-size: 18px;
+    }
+
+    .nax li {
+        padding: 10px; 
+        font-size: 40px;
+    }
+
+    .panthom {
+        width: 60%;
+    }
+}
+
+/* Media query for mobile screens with a width of 300 pixels or less */
+@media only screen and (max-width: 600px) {
+    .priority {
+        padding-top: 30px; 
+        font-size: 12px;
+    }
+
+    .nax li {
+        padding: 5px;
+        font-size: 20px; 
+    }
+
+    .panthom {
+        width: 90%;
+    }
+}
+
+
+
+/* newletter media */
+@media only screen and (max-width: 600px) {
+    .box5 {
+        margin-top: 16vh;
+        margin-left: 42vw;
+    }
+    .newsletter {
+        flex-direction: column;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .iimag{
+     width: 100%;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .newsletter {
+        flex-direction: row;
+    }
+}
+
+/* Whychoose media */
+@media only screen and (max-width: 600px){
+    .choose {
+        padding: 0 60px;
+        margin-top: 7vh;
+        text-align: ;
+    }
+
+    .lock{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .lock2{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+
+/* Tour media */
+@media only screen and (max-width: 600px) {
+    .sec-section{
+        padding: 20px 60px;
+        height: auto;
+        flex-direction: column;
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    
+    }
+    @media only screen and (min-width: 900px) {
+     
+    }
+
+
+
+    /* top section media */
+    @media only screen and (max-width: 600px) {
+        header {
+            padding: 5%;
+        }
+        
+        .contact h1,
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        .inputX {
+            flex-direction: column;
+            gap: 10px;
+    
+        }
+        button{
+           padding: 0px 105px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .mom{
+            padding: 0px 20px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
