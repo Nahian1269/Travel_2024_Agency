@@ -90,7 +90,7 @@ header {
 /* top side */
 .top-class {
     height: 70vh;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.511), rgba(117, 19, 93, 0.628)), url('/Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.511), rgba(117, 19, 93, 0.628)), url('Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -282,7 +282,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: right;
     padding-right: 3vw;
     margin-top: 9vh;
-    background-image: url('/Images/Group\ 39.png');
+    background-image: url('Images/Group\ 39.png');
     opacity:0.9 ;
 }
 .cov2{
@@ -295,7 +295,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: left;
     padding-left: 3vw;
     margin-top: 2vh;
-    background-image: url('/Images/Group\ 40.png');
+    background-image: url('Images/Group\ 40.png');
     opacity:0.9 ;
 }
 .cov3{
@@ -308,7 +308,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: right;
     padding-right: 3vw;
     margin-top: 2vh;
-    background-image: url('/Images/Group\ 39.png');
+    background-image: url('Images/Group\ 39.png');
     opacity:0.9 ;
 }
 .del{
@@ -465,7 +465,7 @@ background: rgba(251, 181, 99, 0.05);
 .iimag {
     width: 40%;
     height: 40.2vh;
-    background-image: url('/Images/Rectangle\ 8\ \(1\).png');
+    background-image: url('Images/Rectangle\ 8\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
