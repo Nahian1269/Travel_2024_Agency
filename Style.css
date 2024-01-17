@@ -86,6 +86,7 @@ header {
     justify-content: space-between;
 }
 
+
 /* top side */
 .top-class {
     height: 70vh;
@@ -134,6 +135,19 @@ header {
         border-radius: 10px;
         border: none;
     }
+
+.box .momx {
+        height: 5vh; 
+        max-width: 100%; 
+        border-radius: 10px;
+        border: none;
+}
+.box .mom1 {
+    height: 5vh; 
+    max-width: 100%; 
+    border-radius: 10px;
+    border: none;
+}
 
 .box4>button {
     height: 5vh;
@@ -268,7 +282,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: right;
     padding-right: 3vw;
     margin-top: 9vh;
-    background-image: url('Images/Group\ 39.png');
+    background-image: url('/Images/Group\ 39.png');
     opacity:0.9 ;
 }
 .cov2{
@@ -281,7 +295,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: left;
     padding-left: 3vw;
     margin-top: 2vh;
-    background-image: url('Images/Group\ 40.png');
+    background-image: url('/Images/Group\ 40.png');
     opacity:0.9 ;
 }
 .cov3{
@@ -294,7 +308,7 @@ background: rgba(251, 181, 99, 0.05);
     justify-content: right;
     padding-right: 3vw;
     margin-top: 2vh;
-    background-image: url('Images/Group\ 39.png');
+    background-image: url('/Images/Group\ 39.png');
     opacity:0.9 ;
 }
 .del{
@@ -338,12 +352,18 @@ background: rgba(251, 181, 99, 0.05);
     display: flex;
     justify-content: center;
 }
+
 .media{
     padding: 0 235px;
     margin-top: 9vh; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.right iframe{
+    width:610px ;
+    height: 410px;
 }
 
 
@@ -415,7 +435,7 @@ background: rgba(251, 181, 99, 0.05);
     max-width: 100%; 
     height: 12vh;
     transform: rotate(-19.628deg);
-    margin-top: 15vh;
+    margin-top: 22vh;
     margin-left:17vw;
     margin-right: auto;
     border-radius: 10px;
@@ -444,7 +464,7 @@ background: rgba(251, 181, 99, 0.05);
 
 .iimag {
     width: 40%;
-    height: 32.2vh;
+    height: 40.2vh;
     background-image: url('/Images/Rectangle\ 8\ \(1\).png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -452,12 +472,6 @@ background: rgba(251, 181, 99, 0.05);
     border-radius: 20px;
     background-color: red;
 }
-
-
-
-
-
-
 
 
 /* footer */
@@ -498,10 +512,8 @@ font-size: 15px;
 }
 
 
-
-
-
 /* bonus Section */
+
 .award {
     width: 10vw;
     height: 10vw;
@@ -512,11 +524,13 @@ font-size: 15px;
     text-align: center;
     border-radius: 10px;
     border: 2px solid orangered;
+    transition: transform 0.2s ease-in-out;
 }
 
 .award:hover {
     background-color: orangered;
     color: white;
+    transform: scale(1.1);
 }
 
 .project {
@@ -529,11 +543,13 @@ font-size: 15px;
     text-align: center;
     border: 2px solid orangered;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .project:hover {
     background-color: orangered;
     color: white;
+    transform: scale(1.1);
 }
 
 .client {
@@ -546,11 +562,13 @@ font-size: 15px;
     text-align: center;
     border: 2px solid orangered;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .client:hover {
     background-color: orangered;
     color: white;
+    transform: scale(1.1);
 }
 
 .email {
@@ -563,11 +581,13 @@ font-size: 15px;
     text-align: center;
     border: 2px solid orangered;
     border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .email:hover {
     background-color: orangered;
     color: white;
+    transform: scale(1.1);
 }
 
 .alt img {
@@ -627,6 +647,40 @@ font-size: 15px;
     margin-top: 9vh; 
 }
 
+@media (max-width: 600px) {
+    .someoff,
+    .ttl {
+        padding: 0 10px;
+    }
+
+    .facts {
+        flex-wrap: wrap;
+    }
+
+    .award,
+    .project,
+    .client,
+    .email {
+        width: 45vw;
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+    .facts{
+        display: grid;
+        flex-wrap: wrap;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for desktop devices */
+@media (min-width: 601px) and (max-width: 900px) {
+    .someoff,
+    .ttl {
+        padding: 0 50px;
+    }
+}
+
 
 /* media files */
 
@@ -670,7 +724,7 @@ font-size: 15px;
 /* newletter media */
 @media only screen and (max-width: 600px) {
     .box5 {
-        margin-top: 16vh;
+        margin-top: 23vh;
         margin-left: 42vw;
     }
     .newsletter {
@@ -680,7 +734,10 @@ font-size: 15px;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-
+    .box5 h1{
+        margin-top: -20px;
+    }
+ 
     .iimag{
      width: 100%;
     }
@@ -728,6 +785,7 @@ font-size: 15px;
         flex-direction: column;
         display: grid;
         flex-wrap: wrap;
+        justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
@@ -767,11 +825,105 @@ font-size: 15px;
            justify-content: center;
         }
         .mom{
-            padding: 0px 20px;
+            padding: 0px 144px;
+        }
+        .momx{
+            padding: 0 160px;
+        }
+        .mom1{
+            padding: 0px 120px;
+        }
+        .mom1::placeholder{
+
         }
     }
+    /* Simple perfect */
+@media only screen and (max-width: 600px){
+    .media {
+        padding: 0 60px;
+        margin-top: 7vh;
+        text-align: ;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 
+    .left{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+       
+    }
+    .right iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+/* deals */
 
+@media screen and (max-width: 600px) {
+    .deals {
+        padding: 0 20px;
+    }
+
+    .cov,
+    .cov2,
+    .cov3 {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .del{
+        width: 110%;
+        margin-left: 0px;   
+    }
+
+    .content {
+        text-align: center;
+    }
+    .img-container{
+        display: flex;
+        padding-top: 30px;
+        padding-left: 100px;
+    }
+    .content{
+    text-align: center;
+    margin-right: 50px;
+    }  
+    .button2{
+        width: 100%;
+    }
+    .content p {
+        font-size: 0.9rem;
+    }
+    button{
+        width: 90vw;
+    }
+    .shild1{
+        margin-left:-20px;
+    }
+
+}
+
+/* nav bar and logo */
+@media screen and (max-width: 600px)
+{
+    .all{
+        display: grid;
+        flex-wrap:wrap;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .logo{
+        justify-content: center;
+    }
+
+}
 
 
 
